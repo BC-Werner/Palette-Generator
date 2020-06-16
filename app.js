@@ -38,12 +38,16 @@ function buttonControl() {
     randomizeColors()
 
     button.style.transform = "scale(0.9)"
-    button.style.outline = "auto"
+    button.style.outlineStyle = "solid"
+    button.style.outlineWidth = "3px"
+    button.style.outlineColor = "#fff"
+    button.style.outlineOffset = "2px"
+    button.style.mozOutlineRadius = "4px"
 
     setTimeout(() => {
         button.style.transform = "scale(1)"
         button.style.outline = "none"
-    }, 100);
+    }, 1000 * 0.15);
 }
 
 function copyToClipboard(value) {
@@ -64,7 +68,7 @@ function displayOverlay(color) {
     setTimeout(() => {
         overlay.style.visibility = 'hidden'
         overlay.style.opacity = '0'
-    }, 800);
+    }, 1000 * 0.8);
 }
 
 

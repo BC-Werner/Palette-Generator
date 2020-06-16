@@ -77,7 +77,10 @@ main ul li {
 
 main ul li:hover {
     transform: scale(1.1);
-    outline: auto;
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: #fff;
+    -moz-outline-radius: 4px;
 }
 
 button.randomize {
@@ -93,6 +96,11 @@ button.randomize {
     transform: scale(1);
     transition: all 0.1s ease-in-out;
     cursor: pointer;
+    -moz-outline-radius: 4px;
+}
+
+button::-moz-focus-inner {
+    border: 0;
 }
 
 button:focus {
