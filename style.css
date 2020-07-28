@@ -114,7 +114,20 @@ button:focus {
     }
 }
 @media(max-width: 710px) {
+    main h1 {
+        font-size: 2em;
+    }
     main ul {
         grid-template-columns: repeat(2, 1fr);
+    }
+    main ul li {
+        width:  100px;
+        height: 100px;
+    }
+}
+
+@media(max-width: 400px) {
+    main ul {
+        grid-template-columns: 1fr 1fr;
     }
 }
